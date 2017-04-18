@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <script>
+            var aluno = [{nome:"Vitor", "idade":18, "RA":"201526800", "curso":"SI"},
+                              {nome:"Alexandre", "idade":27, "RA":"20151548", "curso":"SI"},
+                              {nome:"Lucas", "idade":18, "RA":"20151619", "curso":"SI"},
+                              {nome:"Ana Júlia", "idade":24, "RA":"20151619", "curso":"SI"},
+                              {nome:"Andressa", "idade":20, "RA":"2015949479", "curso":"SI"}]
+            
+            function VereficaP3 (aluno){
+                for ( i in aluno){
+                    var media = 0.5*(aluno[i].P1 + aluno[i].P2);
+                    if (media > 6) {
+                        alert (aluno[i].nome +" "+  "Passou")
+                    } else{
+                        alert (aluno[i].nome +" "+ "Ficou")
+                    }
+                } 
+            }
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <script>
+            VereficaP3([{"nome":"Vitor", "P1":2, "P2":7},
+                            {"nome":"Alexandre", "P1":10, "P2":10},
+                            {"nome":"Bárbara", "P1":4, "P2":4},
+                            {"nome":"Lucas", "P1":9, "P2":9},
+                            {"nome":"Ana Júlia", "P1":7.5, "P2":5.5},
+                            {"nome":"Andressa", "P1":6.5, "P2":8}
+                ])
+        </script>
+
+    </body>
+</html>

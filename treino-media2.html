@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <script>
+            var alunos = [{nome: "Alexandre"},
+                {nome: "Vitor"},
+                {nome: "barbara"}];
+                
+            function Mediap3 (alunos) {
+                for (i in alunos){
+                    var media = 0.5*(alunos[i].p1) + (alunos[i].p2)
+                    if (media<6){
+                        alert (alunos[i].nome + " " + "passou")
+                    }else {
+                        alert (alunos[i].nome + " " + "ficou")
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            Mediap3 [{"nome":"Alexandre", "p1":6, "p2":2},
+            {"nome":"Vitor", "p1":8, "p2":6},
+            {"nome":"barbara", "p1":10,"p2":10}];
+            
+        </script>
+
+    </body>
+</html>
